@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Moon Walk';
+    src: url('Moon Walk.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'BROTHER';
+    src: url('BROTHER-Bold.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+} 
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",sans-serif; 
+    color: rgba(195, 193, 206, 1);
+    background-color: rgba(0, 7, 32, 1);
+    height:100%;
+
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+
+}
+
+a{
+    text-decoration: none;
+    display:inline-block;
+    color: rgba(195, 193, 206, 1);
+    font-size: small;
+    font-weight: 600;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+/* utility classes */
+
+.small-bold-classes{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding: 1em;
+}
+
+/* nav */
+
+
+.nav-img{
+    margin-right: 2.85em;
+}
+
+li{
+    margin-right: 1em;
+}
+
+.nav-con {
+    background-color: rgba(89, 86, 107, 1);
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+button.nav-bt {
+    border: none;
+    margin: 0px;
+    padding: 0.5em;
+    border-radius: 7px;
+    box-shadow: none;
+    font-size: small;
+    font-weight: 600;
+}
+
+button.nav-bt1 {
+    border: none;
+    margin: 0px;
+    padding: 0.5em;
+    border-radius: 7px;
+    box-shadow: none;
+    font-size: small;
+    font-weight: 600;
+    display: none;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+/* main section */
+
+
+.conatiner.header-sec.flex {
+    height: 100vh;
+    max-width: 1100px;
+    width:90%;
+    margin-inline: auto;
+    margin-top: 2.75em;
+    margin-bottom: 3em;
+    justify-content:space-between;
+}
+
+.header-left {
+    width: 40%;
+    height: 100%;
+}
+
+.header-left {
+    position: relative;
+    width: 40%;
+}
+
+.header-img {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(154, 141, 236, 1);
+    border-radius: 15px;
+    bottom: 0px;
+    height:28%;
+}
+
+.girl{
+    position: absolute;
+    bottom: 0px;
+    height:65%;
+    transform: translateX(8%);
+} 
+
+.header-right {
+    width: 55%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.profile h2,.profile1 h2 {
+    color: rgba(154, 141, 236, 1);
+}
+
+.profile h1,.profile1 h1 {
+    font-family: "Moon Walk";
+    color: white;
+    font-weight: 300;
+}
+
+.badge-img img{
+    width: 100%;;
+}
+
+.bagdge-detail p {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.main-p {
+    padding: 1em;
+    background-color: rgba(18, 27, 60, 1);
+    font-size: medium;
+    border-radius: 10px;
+    margin-top: 1.25em;
+}
+
+.profile1{
+    display: none;
+}
+
+.badge2 .badge-img {
+    background-color: rgba(26, 22, 53, 1);
+}
+
+p.small {
+    font-size: small;
+}
+
+.badge2 h2,.badge1 h2{
+    font-weight: 600;
+}
+
+.badge1,.badge2{
+    width:47%;
+    justify-content: space-between;
+}
+
+.badge-detail{
+    background-color: rgba(154, 141, 236, 1);
+}
+
+.badge-blue{
+    background-color: rgba(154, 141, 236, 1);
+    padding: 0.5em;
+    padding-left: 1em;
+}
+
+.badge1, .badge2{
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.badges{
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Add this to your CSS */
+
+/* Base styles are already applied */
+
+/* Responsive Design */
+
+/* For tablets and medium screens */
+@media screen and (max-width: 991px){
+    .nav-toggle{
+        display: inline;
+        margin-left:1em;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    button.nav-bt1{
+        display: inline;
+    }
+
+    button.nav-bt{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+      .conatiner.header-sec.flex{
+        height: auto;
+     } 
+
+    .header-sec {
+        flex-direction: column;  /* Stack header sections vertically */
+        align-items: center;     /* Center align the content */
+    }
+
+    /* Bring .header-right (containing the profile) to the top */
+    .header-right {
+       /* Make the profile section come first */
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile1 {
+        margin-bottom: 2em; /* Add space below the profile section */
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    /* Keep .header-left (image section) below the profile */
+    .header-left {
+        /* Image section should come second */
+        width: 100%; /* Take up the full width on mobile */
+        display: flex;
+        justify-content: center; /* Center the image */
+    }
+
+    .girl {
+        max-width: 100%; /* Make the image responsive */
+    }
+
+    /* Adjust any other layout inside header-right */
+    .detail, .badges {
+        width:100% /* Ensure content in header-right follows the profile */
+    }
+
+    .profile{
+        display: none;
+    }
+
+    .header-left{
+        height:360px;
+    } 
+
+    
+}
+
+@media screen and (max-width:478px) {
+    .badge1{
+        margin-bottom: 1em;
+    }
+    
+    .badge1,.badge2{
+        width: 100%;
+    }
+
+    .badges{
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+/* For mobile screens */
+
+
+/* For very small screens */
